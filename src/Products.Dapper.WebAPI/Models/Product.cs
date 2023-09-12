@@ -8,6 +8,8 @@ namespace Products.Dapper.WebAPI.Models
 {
     public class Product
     {
+        [JsonProperty("name")]
+        [Key]
         public int Id { get; set; }
 
         [JsonProperty("name")]
